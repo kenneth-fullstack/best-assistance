@@ -1,0 +1,99 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+.main-footer {
+    .display-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 115px;
+
+        .left {
+            .list {
+                display: flex;
+                padding-left: 0;
+
+                font-size: 14px;
+                list-style-type: none;
+
+                li {
+                    padding-right: 10px;
+                    margin-top: 20px;
+                    margin-right: 35px;
+
+                    span {
+                        padding: 0 4px;
+
+                        font-size: 9px;
+
+                        border-radius: 50%;
+                        border: 1px solid $mid-grey;
+                    }
+                }
+            }
+        }
+
+        .right {
+            display: flex;
+            justify-content: space-between;
+
+            .circle-icon {
+                vertical-align: middle;
+                width: 52px;
+                height: 52px;
+
+                color: $mid-grey;
+                text-align: center;
+                line-height: 52px;
+
+                background-color: $light-grey;
+                border-radius: 50%;
+            }
+
+            .ml-icon {
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+
+            .bg-color-envelope {
+                margin-left: 20px;
+
+                color: $light-grey;
+
+                background-color: $yellow-color;
+            }
+
+            .bg-color-arrow-up {
+                margin-left: 20px;
+
+                color: $light-grey;
+
+                background-color: $light-green;
+            }
+        }
+    }
+}
+
+//991 - 768 
+@include respond-to(md) {
+    .main-footer {
+        display: none;
+    }
+}
+
+// 767 - 576
+@include respond-to(sm) {
+    .main-footer {
+        display: none;
+    }
+}
+
+//575 - 320
+@include respond-to(xs) {
+    .main-footer {
+        display: none;
+    }
+}

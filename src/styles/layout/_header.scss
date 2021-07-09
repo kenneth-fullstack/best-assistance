@@ -1,0 +1,214 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    
+    width: 100%;
+
+    background-color: transparent;
+    border-bottom: .5px solid $light-grey;
+
+    transition: all 0.5s;
+
+    .custom-navbar {
+        padding: 23px 0 35px;
+
+        .navbar-brand {
+            .navbar-logo {
+                width: 248px;
+            }
+        }
+
+        .navbar-nav {
+            margin-right: 6px;
+            margin-top: 20px;
+            
+            font-family: $font-opensans-semibold;
+            font-size: 15px;
+
+            .nav-item {
+                position: relative;
+
+                margin-right: 23px;
+
+                .nav-link {
+                    color: $text-color;
+                }
+            }
+
+            .nav-item::after {
+                position: absolute;
+                content: '';
+                right: 0;
+                left: 0;
+
+                width: 100%;
+
+                border-bottom: 2px solid $brand-color;
+
+                opacity: 0;
+            }
+            
+            .nav-item:hover::after {
+                opacity: 1;
+            }
+
+            .nav-item:hover {
+                .nav-link {
+                    color: $brand-color;
+                }
+            }
+        }
+
+        .wrapper-btn {
+            display: flex;
+
+            margin-top: 12px;
+        }
+    }
+}
+
+.sticky {
+    background-color: #fff;
+}
+
+// 1140
+@media screen and ( max-width: 1440px ) {
+    .main-header {
+        .btn-color-2 {
+            span {
+                display: none;
+            }
+        }
+    }
+}
+
+//1199 - 992
+@include respond-to(lg) {
+    .main-header {
+        .custom-navbar {
+            .navbar-brand {
+                .navbar-logo {
+                    width: 200px;
+                }
+            }
+
+            .navbar-nav {
+                font-size: 14px;
+                .nav-item {
+                    margin-right: 13px;
+                }
+            }
+        }
+    }
+}
+
+//991 - 768 
+@include respond-to(md) {
+    .main-header {        
+        border-bottom: none;
+        
+        .custom-navbar {
+            padding: 7px 25px 20px;
+
+            .navbar-brand {
+                .navbar-logo {
+                    width: 150px;
+                }
+            }
+
+            .navbar-nav {
+                font-size: 12px;
+
+                .nav-item {
+                    margin-right: 0;
+                }
+            }
+
+            .wrapper-btn {
+                position: absolute;
+                top: 3px;
+                right: 83px;
+
+                .btn-color-2 {
+                    span {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 767 - 576
+@include respond-to(sm) {
+    .main-header {        
+        border-bottom: none;
+
+        .custom-navbar {
+            padding: 7px 25px 20px;
+
+            .navbar-brand {
+                .navbar-logo {
+                    width: 150px;
+                }
+            }
+
+            .navbar-nav {
+                font-size: 12px;
+
+                .nav-item {
+                    margin-right: 0;
+                }
+            }
+
+            .wrapper-btn {
+                position: absolute;
+                top: 3px;
+                right: 83px;
+
+                .btn-color-2 {
+                    span {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 575 - 320
+@include respond-to(xs) {
+    .main-header {        
+        border-bottom: none;
+
+        .custom-navbar {
+            padding: 7px 10px 20px;
+
+            .navbar-brand {
+                .navbar-logo {
+                    width: 150px;
+                }
+            }
+
+            .navbar-nav {
+                font-size: 12px;
+                
+                .nav-item {
+                    margin-right: 0;
+                }
+            }
+
+            .wrapper-btn {
+                display: none;
+            }
+        }
+    }
+}
