@@ -12,10 +12,10 @@
     z-index: 2;
 
     background-color: $light-grey;
-
+    box-shadow: -3px 3px 15px lighten($mid-grey, 20%);
+    
     .social-list {
       padding-left: 0;
-      list-style-type: none;
 
       li {
         padding: 10px 20px;
@@ -23,6 +23,10 @@
 
       li:last-child {
         border-top: 1px solid $mid-grey;
+      }
+
+      li:hover {
+        background-color: $brand-color;
       }
     }
   }
@@ -35,7 +39,7 @@
       background-image: url("../../assets/images/3.fw.png");
       background-size: cover;
       background-position: center 10%;
-      
+
       .swiper-container {
         margin-top: 90px;
         margin-left: 0px;
@@ -49,11 +53,6 @@
           display: flex;
           justify-content: center;
           align-items: center;
-
-          font-family: $font-opensans-bold;
-          font-size: 60px;
-          line-height: 1.2;
-          color: $light-grey;
         }
       }
 
@@ -62,8 +61,6 @@
         z-index: 1;
 
         margin-left: 7px;
-
-        text-align: left;
 
         .swiper-pagination-bullet {
           margin-right: 7px;
@@ -84,14 +81,8 @@
         .box {
           padding-right: 20px;
 
-          text-align: center;
-
           .box-text {
             margin-top: 10px;
-
-            font-family: $font-opensans-semibold;
-            font-size: 16px;
-            color: $light-grey;
           }
         }
         .box-1 {
@@ -107,6 +98,19 @@
         display: none;
       }
     }
+
+    // .bg-image::before {
+    //   content: "";
+
+    //   position: absolute;
+    //   top: 0;
+    //   right: 0;
+    //   bottom: 0;
+    //   left: 0;
+
+    //   background: linear-gradient(0deg, rgba(143,144,144,1) 0%, rgba(238,238,238,1) 100%);
+    //   opacity: 0.3;
+    // }
   }
 
   .section-mission {
@@ -135,15 +139,7 @@
           &-content {
             margin-left: 40px;
 
-            .our-mission-title {
-              font-family: $font-opensans-bold;
-              font-size: 40px;
-              color: $text-color;
-            }
-
             .our-mission-description {
-              font-size: 16px;
-
               margin-left: 9px;
               margin-top: 38px;
 
@@ -152,8 +148,6 @@
 
                 padding-left: 38px;
                 margin-top: 20px;
-
-                font-size: 18px;
               }
 
               .our-mission-text::before {
@@ -168,8 +162,6 @@
 
         .our-mission-btn {
           padding-right: 49px;
-
-          text-align: right;
         }
       }
 
@@ -195,10 +187,6 @@
             margin-top: 78px;
             margin-bottom: 10px;
             margin-left: 8px;
-
-            font-family: $font-opensans-bold;
-            font-size: 40px;
-            color: $light-grey;
           }
 
           .solution {
@@ -215,19 +203,8 @@
             .solution-description {
               margin-left: 30px;
 
-              color: $light-grey;
-
-              .solution-title {
-                font-family: $font-opensans-bold;
-                font-size: 17px;
-              }
-
               .solution-text {
                 margin-bottom: 0;
-
-                font-family: $font-opensans;
-                font-size: 16px;
-                color: darken($light-grey, 15%);
               }
             }
           }
@@ -260,18 +237,6 @@
       justify-content: space-between;
 
       margin-bottom: 20px;
-
-      .healthy-description {
-        .healthy-title {
-          font-family: $font-opensans-bold;
-          font-size: 40px;
-        }
-
-        .healthy-text {
-          font-family: $font-opensans-bold;
-          font-size: 18px;
-        }
-      }
     }
 
     .swiper-container {
@@ -286,27 +251,16 @@
         padding-left: 33px;
         width: 100%;
 
-        font-size: 18px;
-        color: $light-grey;
-
         .title {
           margin-bottom: 16px;
-
-          font-family: $font-opensans-semibold;
-          font-size: 30px;
         }
 
         .date {
           margin-bottom: 25px;
-
-          font-family: $font-opensans;
-          font-size: 13px;
         }
 
         .category {
           padding: 3px 12px;
-
-          font-size: 15px;
         }
       }
 
@@ -357,6 +311,10 @@
           background-color: $brown-color;
         }
       }
+
+      .swiper-pagination {
+        display: none;
+      }
     }
   }
 
@@ -393,16 +351,6 @@
 
       .information-title {
         padding-right: 75px;
-
-        font-family: $font-opensans-bold;
-        font-size: 40px;
-        color: $text-color;
-        line-height: 1.1;
-
-        span {
-          font-size: 44px;
-          color: $dark-blue;
-        }
       }
 
       .information-content {
@@ -416,16 +364,10 @@
 
           .information-text {
             margin-bottom: 49px;
-
-            font-size: 17px;
-            line-height: 1.8;
           }
+
           .information-list {
             padding-left: 0;
-
-            font-family: $font-opensans-bold;
-            font-size: 18px;
-            list-style-type: none;
 
             li {
               display: flex;
@@ -468,17 +410,13 @@
 
       .left {
         width: 60%;
-        font-family: $font-opensans-bold;
-        color: $light-grey;
 
         .app-text {
-          font-family: $font-opensans;
-          font-size: 17px;
           margin-top: 16px;
-          word-spacing: -1px;
         }
 
-        .app-link {
+        .app-link-1,
+        .app-link-2 {
           margin-top: 21px;
           margin-right: 12px;
         }
@@ -509,23 +447,10 @@
           padding-top: 41px;
           padding-bottom: 40px;
 
-          color: $light-grey;
-
-          .description {
-            font-size: 15px;
-          }
-
           .link {
             padding-bottom: 5px;
 
-            font-size: 16px;
-            color: $light-grey;
-
             border-bottom: 1px solid $light-grey;
-          }
-
-          .contact-number {
-            font-family: $font-opensans-bold
           }
         }
 
@@ -542,8 +467,6 @@
           .description {
             margin-top: 36px;
             margin-bottom: 27px;
-
-            line-height: 1.6;
           }
         }
 
@@ -562,8 +485,6 @@
           .description {
             margin-top: 15px;
             margin-bottom: 27px;
-
-            line-height: 1.7;
           }
         }
 
@@ -579,8 +500,6 @@
           .contact-number {
             margin-top: 44px;
             margin-bottom: 27px;
-
-            word-spacing: 5px;
           }
         }
       }
@@ -633,13 +552,17 @@
     .section-mission {
       padding: 0 30px;
 
-        .provide-solution {
-          padding-top: 50px;
+      .mission-container {
+        .right {
+          .provide-solution {
+            padding-top: 50px;
 
-          .provide-solution-title {
-            margin-top: 60px;
+            .provide-solution-title {
+              margin-top: 50px;
+            }
           }
         }
+      }
     }
   }
 }
@@ -651,12 +574,6 @@
       .bg-image {
         padding-top: 130px;
         padding-bottom: 140px;
-
-        .swiper-container {
-          .swiper-slide {
-            font-size: 50px;
-          }
-        }
 
         .swiper-pagination {
           top: 490px;
@@ -694,8 +611,6 @@
 
           .swiper-slide {
             justify-content: flex-start;
-
-            font-size: 27px;
           }
         }
 
@@ -709,10 +624,6 @@
 
         .box-title {
           display: block;
-
-          font-family: $font-opensans-semibold;
-          font-size: 15px;
-          color: $light-grey;
         }
 
         .boxes-2 {
@@ -732,11 +643,6 @@
 
             .box-text {
               margin-top: 10px;
-
-              font-family: $font-opensans-semibold;
-              font-size: 13px;
-              color: $light-grey;
-              text-align: center;
             }
           }
 
@@ -771,10 +677,6 @@
             &-content {
               margin-left: 0;
 
-              .our-mission-title {
-                font-size: 30px;
-              }
-
               .our-mission-description {
                 margin-left: 0;
                 margin-top: 26px;
@@ -801,10 +703,8 @@
             background-size: cover;
 
             .provide-solution-title {
-              margin-top: 13px;
+              margin-top: 42px;
               margin-left: 3px;
-
-              font-size: 31px;
             }
 
             .solution {
@@ -823,12 +723,13 @@
 
         .healthy-description {
           .healthy-title {
-            font-size: 30px;
+            padding-left: 22px;
+            margin-bottom: 5px;
           }
 
           .healthy-text {
-            font-family: $font-opensans-bold;
-            font-size: 18px;
+            padding-left: 23px;
+            margin-bottom: 10px;
           }
         }
 
@@ -844,14 +745,8 @@
           max-width: 537px;
         }
 
-        .slide-img-2 {
-          max-width: 370px;
-        }
-
-        .slide-img-3 {
-          max-width: 370px;
-        }
-
+        .slide-img-2,
+        .slide-img-3,
         .slide-img-4 {
           max-width: 370px;
         }
@@ -864,7 +759,7 @@
       margin-top: 95px;
 
       background-image: none;
-      background-color: #f0f0f0;
+      background-color: $white-color;
 
       .top-bg-image {
         position: absolute;
@@ -893,12 +788,6 @@
           padding-right: 130px;
           padding-left: 7px;
           margin-top: 27px;
-          
-          font-size: 30px;
-
-          span {
-            font-size: 30px;
-          }
         }
 
         .information-content {
@@ -940,20 +829,15 @@
         .left {
           .app-title {
             margin-bottom: 0px;
-
-            font-size: 24px;
           }
 
           .app-text {
             margin-top: 4px;
             width: 65%;
-
-            font-size: 14px;
-            line-height: 1.7;
-            word-spacing: 2px;
           }
 
-          .app-link {
+          .app-link-1,
+          .app-link-2 {
             margin-right: 11px;
             margin-top: 5px;
             width: 135px;
@@ -974,10 +858,6 @@
         .box-container {
           .box {
             padding-top: 10px;
-
-            .link {
-              font-size: 12px;
-            }
           }
 
           .box-1 {
@@ -995,9 +875,6 @@
             .description {
               margin-top: 12px;
               margin-bottom: 6px;
-
-              font-size: 14px;
-              line-height: 1.8;
             }
           }
 
@@ -1015,8 +892,6 @@
 
             .description {
               margin-bottom: 3px;
-
-              line-height: 1.6;
             }
           }
 
@@ -1033,16 +908,11 @@
               display: block;
               margin-top: 13px;
               margin-bottom: 0px;
-
-              font-size: 14px;
             }
 
             .contact-number {
               margin-top: 8px;
               margin-bottom: 47px;
-
-              font-size: 23px;
-              word-spacing: 2px;
             }
           }
         }
@@ -1053,13 +923,8 @@
         padding-left: 8px;
         margin-top: 17px;
 
-        font-size: 14px;
-        color: $light-grey;
-
         span {
             padding: 0 4px;
-
-            font-size: 9px;
 
             border-radius: 50%;
             border: 1px solid $light-grey;
@@ -1082,8 +947,6 @@
 
           .swiper-slide {
             justify-content: flex-start;
-
-            font-size: 27px;
           }
         }
 
@@ -1097,10 +960,6 @@
 
         .box-title {
           display: block;
-
-          font-family: $font-opensans-semibold;
-          font-size: 15px;
-          color: $light-grey;
         }
 
         .boxes-2 {
@@ -1120,14 +979,8 @@
 
             .box-text {
               margin-top: 10px;
-
-              font-family: $font-opensans-semibold;
-              font-size: 13px;
-              color: $light-grey;
-              text-align: center;
             }
           }
-
         }
       }
     }
@@ -1157,10 +1010,6 @@
             &-content {
               margin-left: 0;
 
-              .our-mission-title {
-                font-size: 30px;
-              }
-
               .our-mission-description {
                 margin-left: 0;
                 margin-top: 26px;
@@ -1189,8 +1038,6 @@
             .provide-solution-title {
               margin-top: 15px;
               margin-left: 3px;
-
-              font-size: 31px;
             }
 
             .solution {
@@ -1207,17 +1054,6 @@
       .display-flex {
         margin-bottom: 10px;
 
-        .healthy-description {
-          .healthy-title {
-            font-size: 30px;
-          }
-
-          .healthy-text {
-            font-family: $font-opensans-bold;
-            font-size: 18px;
-          }
-        }
-
         .filter-dropdown {
           display: none;
         }
@@ -1230,14 +1066,8 @@
           max-width: 537px;
         }
 
-        .slide-img-2 {
-          max-width: 370px;
-        }
-
-        .slide-img-3 {
-          max-width: 370px;
-        }
-
+        .slide-img-2,
+        .slide-img-3,
         .slide-img-4 {
           max-width: 370px;
         }
@@ -1250,7 +1080,7 @@
       margin-top: 95px;
 
       background-image: none;
-      background-color: #f0f0f0;
+      background-color: $white-color;
 
       .top-bg-image {
         position: absolute;
@@ -1280,12 +1110,6 @@
           margin-top: 27px;
           padding-right: 130px;
           padding-left: 7px;
-
-          font-size: 30px;
-
-          span {
-            font-size: 30px;
-          }
         }
 
         .information-content {
@@ -1328,20 +1152,15 @@
         .left {
           .app-title {
             margin-bottom: 0px;
-
-            font-size: 24px;
           }
 
           .app-text {
             margin-top: 4px;
             width: 65%;
-
-            font-size: 14px;
-            line-height: 1.7;
-            word-spacing: 2px;
           }
 
-          .app-link {
+          .app-link-1,
+          .app-link-2 {
             margin-right: 11px;
             margin-top: 5px;
             width: 135px;
@@ -1362,10 +1181,6 @@
         .box-container {
           .box {
             padding-top: 10px;
-
-            .link {
-              font-size: 12px;
-            }
           }
 
           .box-1 {
@@ -1383,9 +1198,6 @@
             .description {
               margin-top: 12px;
               margin-bottom: 6px;
-
-              font-size: 14px;
-              line-height: 1.8;
             }
           }
 
@@ -1403,8 +1215,6 @@
 
             .description {
               margin-bottom: 3px;
-
-              line-height: 1.6;
             }
           }
 
@@ -1421,16 +1231,11 @@
               display: block;
               margin-top: 13px;
               margin-bottom: 0px;
-
-              font-size: 14px;
             }
 
             .contact-number {
               margin-top: 8px;
               margin-bottom: 47px;
-
-              font-size: 20px;
-              word-spacing: 2px;
             }
           }
         }
@@ -1441,13 +1246,8 @@
         padding-left: 8px;
         margin-top: 17px;
 
-        font-size: 14px;
-        color: $light-grey;
-
         span {
             padding: 0 4px;
-
-            font-size: 9px;
 
             border-radius: 50%;
             border: 1px solid $light-grey;
@@ -1476,8 +1276,6 @@
 
           .swiper-slide {
             justify-content: flex-start;
-
-            font-size: 25px;
           }
         }
 
@@ -1492,10 +1290,6 @@
         .box-title {
           display: block;
           margin-top: 20px;
-
-          font-family: $font-opensans-semibold;
-          font-size: 15px;
-          color: $light-grey;
         }
 
         .boxes-2 {
@@ -1515,11 +1309,6 @@
             .box-text {
               margin-top: 10px;
               margin-bottom: 0;
-
-              font-family: $font-opensans-semibold;
-              font-size: 13px;
-              color: $light-grey;
-              text-align: center;
             }
           }
 
@@ -1553,16 +1342,11 @@
             &-content {
               margin-left: 0;
 
-              .our-mission-title {
-                font-size: 20px;
-              }
-
               .our-mission-description {
                 margin-left: 0;
                 margin-top: 0;
 
                 .our-mission-text {
-                  font-size: 15px;
                   margin-top: 19px;
                 }
               }
@@ -1570,7 +1354,6 @@
           }
 
           .our-mission-btn {
-            text-align: left;
             padding-left: 10px;
             padding-right: 0;
           }
@@ -1593,8 +1376,6 @@
             .provide-solution-title {
               margin-top: 0;
               margin-left: 3px;
-
-              font-size: 20px;
             }
 
             .solution {
@@ -1605,21 +1386,7 @@
                 width: 35px;
                 height: 35px;
               }
-
-              .solution-description {
-                .solution-title {
-                  font-size: 14px;
-                }
-
-                .solution-text {
-                  font-size: 14px;
-                }
-              }
             }
-
-            // .solution-3 {
-            //   margin-top: 25px;
-            // }
           }
         }
       }
@@ -1633,14 +1400,13 @@
 
         .healthy-description {
           .healthy-title {
-            font-size: 20px;
-            margin-bottom: 5px;
+            padding-left: 0;
+            margin-bottom: 6px;
           }
 
           .healthy-text {
-            font-family: $font-opensans-bold;
-            padding-right: 5px;
-            font-size: 12px;
+            padding-left: 0;
+            margin-bottom: 7px;
           }
         }
 
@@ -1658,18 +1424,15 @@
           background-position: center;
 
           .title {
-            font-size: 18px;
             margin-bottom: 3px;
           }
 
           .date {
-            font-size: 11px;
             margin-bottom: 2px;
           }
 
           .category {
             padding: 1px 6px;
-            font-size: 11px;
           }
         }
 
@@ -1677,14 +1440,8 @@
           max-width: 537px;
         }
 
-        .slide-img-2 {
-          max-width: 370px;
-        }
-
-        .slide-img-3 {
-          max-width: 370px;
-        }
-
+        .slide-img-2,
+        .slide-img-3,
         .slide-img-4 {
           max-width: 370px;
         }
@@ -1692,7 +1449,7 @@
     }
 
     .section-information {
-      padding-bottom: 55px;
+      padding-bottom: 28px;
       padding-top: 43px;
       margin-top: 45px;
 
@@ -1737,13 +1494,6 @@
           padding-right: 0;
           padding-left: 0;
           margin-top: 0;
-
-          font-size: 19px;
-          word-spacing: 6px;
-
-          span {
-            font-size: 21px;
-          }
         }
 
         .information-content {
@@ -1757,16 +1507,11 @@
             .information-text {
               padding-left: 0;
               margin-bottom: 20px;
-
-              font-size: 15px;
-              line-height: 1.7;
             }
 
             .information-list {
               padding-left: 0;
               padding-right: 14px;
-
-              font-size: 14px;
 
               li {
                 margin-bottom: 13px;
@@ -1786,39 +1531,43 @@
     }
 
     .section-app {
-      padding-top: 37px;
-      padding-bottom: 20px;
+      padding-top: 35px;
+      padding-bottom: 1px;
       margin-top: 0;
 
 
       .display-flex {
         flex-direction: column;
         padding-bottom: 17px;
-        padding-left: 7px;
+        padding-left: 0;
 
         .left {
           width: 100%;
 
           .app-title {
             margin-bottom: 0px;
-
-            font-size: 24px;
           }
 
           .app-text {
-            margin-top: 4px;
-            width: 65%;
-
-            font-size: 14px;
-            line-height: 1.7;
-            word-spacing: 2px;
+            margin-top: 2px;
+            width: 100%;
           }
 
-          .app-link {
-            margin-right: 11px;
-            margin-top: 5px;
+          .app-link-1,
+          .app-link-2 {
+            margin-top: 7px;
             width: 135px;
           }
+
+          .app-link-1 {
+            margin-right: 11px;
+          }
+
+          .app-link-2 {
+            margin-right: 0;
+          }
+
+
         }
 
         .right {
@@ -1828,60 +1577,56 @@
 
       .box-wrapper {
         .box-container {
+          flex-direction: column;
+          
           .box {
             padding-top: 10px;
-
-            .link {
-              font-size: 12px;
-            }
+            width: 100%;
           }
 
           .box-1 {
-            padding-right: 0px;
-            padding-left: 0px;
-            width: 33%;
+            padding-right: 0;
+            padding-left: 4px;
+            padding-bottom: 35px;
 
             border-right: none;
 
             .icon {
-              margin-top: 16px;
+              margin-top: 12px;
               width: 45px;
             }
 
             .description {
-              margin-top: 12px;
+              margin-top: 16px;
               margin-bottom: 6px;
-
-              font-size: 14px;
-              line-height: 1.8;
             }
           }
 
           .box-2 {
-            padding-left: 5px;
-            padding-right: 10px;
-            width: 36%;
+            padding-left: 2px;
+            padding-right: 0;
+            padding-top: 0;
 
             border-right: none;
 
             .icon {
-              margin-top: 3px;
+              margin-top: 0;
               width: 45px;
             }
 
             .description {
-              margin-bottom: 3px;
-
-              line-height: 1.6;
+              margin-top: 9px;
+              margin-bottom: 9px;
             }
           }
 
           .box-3 {
-            padding-left: 10px;
-            width: 31%;
+            padding-top: 0;
+            padding-left: 3px;
+            padding-bottom: 24px;
 
             .icon {
-              margin-top: 15px;
+              margin-top: 3px;
               width: 32px;
             }
 
@@ -1889,16 +1634,11 @@
               display: block;
               margin-top: 13px;
               margin-bottom: 0px;
-
-              font-size: 14px;
             }
 
             .contact-number {
               margin-top: 8px;
-              margin-bottom: 47px;
-
-              font-size: 20px;
-              word-spacing: 2px;
+              margin-bottom: 6px;
             }
           }
         }
@@ -1906,16 +1646,11 @@
 
       .koein {
         display: block;
-        padding-left: 8px;
+        padding-left: 0;
         margin-top: 17px;
-
-        font-size: 14px;
-        color: $light-grey;
 
         span {
             padding: 0 4px;
-
-            font-size: 9px;
 
             border-radius: 50%;
             border: 1px solid $light-grey;

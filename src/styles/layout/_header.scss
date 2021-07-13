@@ -29,18 +29,11 @@
         .navbar-nav {
             margin-right: 6px;
             margin-top: 20px;
-            
-            font-family: $font-opensans-semibold;
-            font-size: 15px;
 
             .nav-item {
                 position: relative;
 
                 margin-right: 23px;
-
-                .nav-link {
-                    color: $text-color;
-                }
             }
 
             .nav-item::after {
@@ -58,12 +51,6 @@
             
             .nav-item:hover::after {
                 opacity: 1;
-            }
-
-            .nav-item:hover {
-                .nav-link {
-                    color: $brand-color;
-                }
             }
         }
 
@@ -101,7 +88,6 @@
             }
 
             .navbar-nav {
-                font-size: 14px;
                 .nav-item {
                     margin-right: 13px;
                 }
@@ -125,8 +111,6 @@
             }
 
             .navbar-nav {
-                font-size: 12px;
-
                 .nav-item {
                     margin-right: 0;
                 }
@@ -162,8 +146,6 @@
             }
 
             .navbar-nav {
-                font-size: 12px;
-
                 .nav-item {
                     margin-right: 0;
                 }
@@ -199,8 +181,6 @@
             }
 
             .navbar-nav {
-                font-size: 12px;
-                
                 .nav-item {
                     margin-right: 0;
                 }

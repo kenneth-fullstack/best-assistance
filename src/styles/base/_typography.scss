@@ -7,3 +7,831 @@ body {
   color: $text-color;
   font: normal 125% / 1.4 $text-font-stack;
 }
+
+// button component
+.custom-btn {
+    font-family: $font-opensans-semibold;
+    font-size: 14px;
+}
+
+.btn-color-1,
+.btn-color-2,
+.blue-gradient-btn {
+  color: $light-grey;
+}
+
+.btn-color-2 {
+  a {
+    color: $light-grey;
+  }
+}
+
+.blue-gradient-btn {
+  font-size: 16px;
+}
+
+.blue-gradient-btn:hover {
+    color: $brand-color;
+}
+
+.history-btn {
+    color: $text-color;
+}
+
+.custom-dropdown {
+    .dropdown-menu {
+        .dropdown-item {
+            color: $light-grey;
+        }
+    }
+}
+
+.dropdown-btn {
+    font-family: $font-opensans-semibold;
+    color: $dark-grey;
+}
+
+// header layout
+.main-header {
+  .custom-navbar {
+    .navbar-nav {
+      font-family: $font-opensans-semibold;
+      font-size: 15px;
+
+      .nav-item {
+        .nav-link {
+          color: $text-color;
+        }
+      }
+
+      .nav-item:hover {
+        .nav-link {
+          color: $brand-color;
+        }
+      }
+    }
+
+
+  }
+}
+
+.home {
+  .floating-social {
+    .social-list {
+      list-style-type: none;
+    }
+  }
+
+  .section-intro {
+    .bg-image {
+      .swiper-container {
+        .swiper-slide {
+          font-family: $font-opensans-bold;
+          font-size: 60px;
+          line-height: 1.2;
+          color: $light-grey;
+        }
+      }
+
+      .swiper-pagination {
+        text-align: left;
+      }
+
+      .boxes {
+        .box {
+          text-align: center;
+
+          .box-text {
+            font-family: $font-opensans-semibold;
+            font-size: 16px;
+            color: $light-grey;
+          }
+        }
+      }
+    }
+  }
+
+  .section-mission {
+    .mission-container {
+      .left {
+        .our-mission {
+          &-content {
+            .our-mission-title {
+              font-family: $font-opensans-bold;
+              font-size: 40px;
+              color: $text-color;
+            }
+
+            .our-mission-description {
+              font-size: 16px;
+
+              .our-mission-text {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+
+        .our-mission-btn {
+          text-align: right;
+        }
+      }
+
+      .right {
+        .provide-solution {
+          .provide-solution-title {
+            font-family: $font-opensans-bold;
+            font-size: 40px;
+            color: $light-grey;
+          }
+
+          .solution {
+            .solution-description {
+              color: $light-grey;
+
+              .solution-title {
+                font-family: $font-opensans-bold;
+                font-size: 17px;
+              }
+
+              .solution-text {
+                font-family: $font-opensans;
+                font-size: 16px;
+                color: darken($light-grey, 15%);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .section-healthy-reading {
+    .display-flex {
+      .healthy-description {
+        .healthy-title {
+          font-family: $font-opensans-bold;
+          font-size: 40px;
+        }
+
+        .healthy-text {
+          font-family: $font-opensans-bold;
+          font-size: 18px;
+        }
+      }
+    }
+
+    .swiper-container {
+      .swiper-slide {
+        font-size: 18px;
+        color: $light-grey;
+
+        .title {
+          font-family: $font-opensans-semibold;
+          font-size: 30px;
+        }
+
+        .date {
+          font-family: $font-opensans;
+          font-size: 13px;
+        }
+
+        .category {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .section-information {
+    .display-flex {
+      .information-title {
+        font-family: $font-opensans-bold;
+        font-size: 40px;
+        color: $text-color;
+        line-height: 1.1;
+
+        span {
+          font-size: 44px;
+          color: $dark-blue;
+        }
+      }
+
+      .information-content {
+        .information-description {
+          .information-text {
+            font-size: 17px;
+            line-height: 1.8;
+          }
+
+          .information-list {
+            font-family: $font-opensans-bold;
+            font-size: 18px;
+            list-style-type: none;
+          }
+        }
+      }
+    }
+  }
+
+  .section-app {
+    .display-flex {
+      .left {
+        font-family: $font-opensans-bold;
+        color: $light-grey;
+
+        .app-text {
+          font-family: $font-opensans;
+          font-size: 17px;
+          word-spacing: -1px;
+        }
+      }
+    }
+
+    .box-wrapper {
+      .box-container {
+        .box {
+          color: $light-grey;
+
+          .description {
+            font-size: 15px;
+          }
+
+          .link {
+            font-size: 16px;
+            color: $light-grey;
+          }
+
+          .contact-number {
+            font-family: $font-opensans-bold
+          }
+        }
+
+        .box-1 {
+          .description {
+            line-height: 1.6;
+          }
+        }
+
+        .box-2 {
+          .description {
+            line-height: 1.7;
+          }
+        }
+
+        .box-3 {
+          .contact-number {
+            word-spacing: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.main-footer {
+  .display-flex {
+    .left {
+      .list {
+        font-size: 14px;
+        list-style-type: none;
+
+        li {
+          span {
+            font-size: 9px;
+          }
+        }
+      }
+    }
+
+    .right {
+      .circle-icon {
+        color: $mid-grey;
+        text-align: center;
+        line-height: 52px;
+      }
+
+      .bg-color-envelope {
+        color: $light-grey;
+      }
+
+      .bg-color-arrow-up {
+        color: $light-grey;
+      }
+    }
+  }
+}
+
+//1199 - 992
+@include respond-to(lg) {
+  // header
+    .main-header {
+        .custom-navbar {
+            .navbar-nav {
+                font-size: 14px;
+            }
+        }
+    }
+
+    // home
+    .home {
+      .section-intro {
+        .bg-image {
+          .swiper-container {
+            .swiper-slide {
+              font-size: 50px;
+            }
+          }
+        }
+      }
+    }
+}
+
+//991 - 768 
+@include respond-to(md) {
+    // button component
+    .button-3,
+    .button-4 {
+        font-size: 12px;
+    }
+
+    // home
+    .home {
+      .section-intro {
+        .bg-image {
+          .swiper-container {
+            .swiper-slide {
+              font-size: 27px;
+            }
+          }
+          .box-title {
+            font-family: $font-opensans-semibold;
+            font-size: 15px;
+            color: $light-grey;
+          }
+
+          .boxes-2 {
+            .box {
+              .box-text {
+                font-family: $font-opensans-semibold;
+                font-size: 13px;
+                color: $light-grey;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+
+      .section-mission {
+        .mission-container {
+          .left {
+            .our-mission {
+                .our-mission-title {
+                  font-size: 30px;
+                }
+            }
+          }
+
+          .right {
+            .provide-solution {
+              .provide-solution-title {
+                font-size: 31px;
+              }
+            }
+          }
+        }
+      }
+
+      .section-healthy-reading {
+        .display-flex {
+          .healthy-description {
+            .healthy-title {
+              font-size: 30px;
+            }
+
+            .healthy-text {
+              font-family: $font-opensans-bold;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+
+      .section-information {
+        .display-flex {
+          .information-title {
+            font-size: 30px;
+
+            span {
+              font-size: 30px;
+            }
+          }
+        }
+      }
+
+      .section-app {
+        .display-flex {
+          .left {
+            .app-title {
+              font-size: 24px;
+            }
+
+            .app-text {
+              font-size: 14px;
+              line-height: 1.7;
+              word-spacing: 2px;
+            }
+          }
+        }
+
+        .box-wrapper {
+          .box-container {
+            .box {
+              .link {
+                font-size: 12px;
+              }
+            }
+
+            .box-1 {
+              .description {
+                font-size: 14px;
+                line-height: 1.8;
+              }
+            }
+
+            .box-2 {
+              .description {
+                line-height: 1.6;
+              }
+            }
+
+            .box-3 {
+              .small-text {
+                font-size: 14px;
+              }
+
+              .contact-number {
+                font-size: 23px;
+                word-spacing: 2px;
+              }
+            }
+          }
+        }
+
+        .koein {
+          font-size: 14px;
+          color: $light-grey;
+
+          span {
+              font-size: 9px;
+          }
+        }
+      }
+    }
+}
+
+//767 - 576
+@include respond-to(sm) {
+  // home
+  .home {
+    .section-intro {
+      .bg-image {
+        .swiper-container {
+          .swiper-slide {
+            font-size: 27px;
+          }
+        }
+
+        .box-title {
+          font-family: $font-opensans-semibold;
+          font-size: 15px;
+          color: $light-grey;
+        }
+
+        .boxes-2 {
+          .box {
+            .box-text {
+              font-family: $font-opensans-semibold;
+              font-size: 13px;
+              color: $light-grey;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+
+    .section-mission {
+      .mission-container {
+        .left {
+          .our-mission {
+            .our-mission-title {
+              font-size: 30px;
+            }
+          }
+        }
+
+        .right {
+          .provide-solution {
+            .provide-solution-title {
+              font-size: 31px;
+            }
+          }
+        }
+      }
+    }
+
+    .section-healthy-reading {
+      .display-flex {
+        .healthy-description {
+          .healthy-title {
+            font-size: 30px;
+          }
+
+          .healthy-text {
+            font-family: $font-opensans-bold;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    .section-information {
+      .display-flex {
+        .information-title {
+          font-size: 30px;
+
+          span {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+
+    .section-app {
+      .display-flex {
+        .left {
+          .app-title {
+            font-size: 24px;
+          }
+
+          .app-text {
+            font-size: 14px;
+            line-height: 1.7;
+            word-spacing: 2px;
+          }
+        }
+      }
+
+      .box-wrapper {
+        .box-container {
+          .box {
+            .link {
+              font-size: 12px;
+            }
+          }
+
+          .box-1 {
+            .description {
+              font-size: 14px;
+              line-height: 1.8;
+            }
+          }
+
+          .box-2 {
+            .description {
+              line-height: 1.6;
+            }
+          }
+
+          .box-3 {
+            .small-text {
+              font-size: 14px;
+            }
+
+            .contact-number {
+              font-size: 20px;
+              word-spacing: 2px;
+            }
+          }
+        }
+      }
+
+      .koein {
+        font-size: 14px;
+        color: $light-grey;
+
+        span {
+            font-size: 9px;
+        }
+      }
+    }
+  }
+}
+
+
+
+//575 - 320
+@include respond-to(xs) {
+  // button component
+  .button-1, 
+  .button-2 {
+      font-size: 13px;
+  }
+
+  .button-3 {
+      font-size: 12px;
+  }
+
+  // home
+  .home {
+    .section-intro {
+      .bg-image {
+        .swiper-container {
+          .swiper-slide {
+            font-size: 25px;
+          }
+        }
+
+        .box-title {
+          font-family: $font-opensans-semibold;
+          font-size: 15px;
+          color: $light-grey;
+        }
+
+        .boxes-2 { 
+          .box {
+            .box-text {
+              font-family: $font-opensans-semibold;
+              font-size: 13px;
+              color: $light-grey;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+
+    .section-mission {
+      .mission-container {
+        .left {
+          .our-mission {
+            &-content {
+              .our-mission-title {
+                font-size: 20px;
+              }
+
+              .our-mission-description {
+                .our-mission-text {
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+
+          .our-mission-btn {
+            text-align: left;
+          }
+        }
+
+        .right {
+          .provide-solution {
+            .provide-solution-title {
+              font-size: 20px;
+            }
+
+            .solution {
+              .solution-description {
+                .solution-title {
+                  font-size: 14px;
+                }
+
+                .solution-text {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .section-healthy-reading {
+      .display-flex {
+        .healthy-description {
+          .healthy-title {
+            font-size: 20px;
+          }
+
+          .healthy-text {
+            font-family: $font-opensans-bold;
+            font-size: 12px;
+          }
+        }
+      }
+
+      .swiper-container {
+        .swiper-slide {
+          .title {
+            font-size: 18px;
+          }
+
+          .date {
+            font-size: 11px;
+          }
+
+          .category {
+            font-size: 11px;
+          }
+        }
+      }
+    }
+
+    .section-information {
+      .display-flex {
+        .information-title {
+          font-size: 19px;
+          word-spacing: 6px;
+
+          span {
+            font-size: 21px;
+          }
+        }
+
+        .information-content {
+          .information-description {
+            .information-text {
+              font-size: 15px;
+              line-height: 1.7;
+            }
+
+            .information-list {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+
+    .section-app {
+      .display-flex {
+        .left {
+          .app-title {
+            font-size: 24px;
+          }
+
+          .app-text {
+            font-size: 14px;
+            line-height: 1.7;
+            word-spacing: 2px;
+          }
+        }
+      }
+
+      .box-wrapper {
+        .box-container {
+          
+          .box {
+            .link {
+              font-size: 12px;
+            }
+          }
+
+          .box-1 {
+            .description {
+              font-size: 14px;
+              line-height: 1.8;
+            }
+          }
+
+          .box-2 {
+            .description {
+              line-height: 1.6;
+            }
+          }
+
+          .box-3 {
+            .small-text {
+              font-size: 14px;
+            }
+
+            .contact-number {
+              font-size: 23px;
+              word-spacing: 2px;
+            }
+          }
+        }
+      }
+
+      .koein {
+        font-size: 12px;
+        color: $light-grey;
+
+        span {
+            font-size: 9px;
+        }
+      }
+    }
+  }
+}

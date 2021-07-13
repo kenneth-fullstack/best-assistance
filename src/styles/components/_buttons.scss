@@ -8,39 +8,39 @@
     padding: 12px 22px;
     margin-left: 5px;
 
-    font-family: $font-opensans-semibold;
-    font-size: 14px;
-
     border-radius: 50px;
 }
 
 .btn-color-1 {
-    color: $light-grey;
-
     background-color: $brand-color;
 }
 
 .btn-color-2 {
-    color: $light-grey;
-
     background-color: $yellow-color;
 }
 
 .blue-gradient-btn {
-    font-size: 16px;
-    color: $light-grey;
-
     background: linear-gradient(90deg, #52adf0 0%, #226ca9 100%);
     border-radius: 60px;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+}
+
+.blue-gradient-btn:hover {
+    background: #fff;
+    border: 2px solid $brand-color;
 }
 
 .history-btn {
     padding: 15px 55px;
 
-    color: $text-color;
-
     background-color: $light-yellew;
     border-radius: 50px;
+}
+
+.history-btn:hover {
+    color: $light-grey;
+    background-color: darken($light-yellew, 10%);
 }
 
 .button-1 {
@@ -72,10 +72,6 @@
         min-width: 5rem;
 
         background-color: $brand-color;
-        
-        .dropdown-item {
-            color: $light-grey;
-        }
 
         .dropdown-item:hover {
             background-color: $light-blue;
@@ -86,9 +82,6 @@
 .dropdown-btn {
     padding: 15px 35px;
     margin-top: 37px;
-
-    font-family: $font-opensans-semibold;
-    color: $dark-grey;
 
     border-radius: 50px;
 
@@ -110,18 +103,14 @@
     }
 
     .button-3 {
-        padding: 10px 40px;
+        padding: 11px 42px;
         margin-top: 34px;
         margin-left: 19px;
-
-        font-size: 13px;
     }
 
     .button-4 {
         padding: 10px 33px;
         margin-top: 24px;
-        
-        font-size: 12px;
     }
 }
 
@@ -146,5 +135,9 @@
         margin-top: 20px;
         padding: 11px 40px;
         font-size: 12px;
+    }
+
+    .button-4 {
+        display: none;
     }
 }

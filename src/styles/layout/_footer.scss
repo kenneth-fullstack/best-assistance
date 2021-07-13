@@ -16,9 +16,6 @@
                 display: flex;
                 padding-left: 0;
 
-                font-size: 14px;
-                list-style-type: none;
-
                 li {
                     padding-right: 10px;
                     margin-top: 20px;
@@ -26,8 +23,6 @@
 
                     span {
                         padding: 0 4px;
-
-                        font-size: 9px;
 
                         border-radius: 50%;
                         border: 1px solid $mid-grey;
@@ -45,10 +40,6 @@
                 width: 52px;
                 height: 52px;
 
-                color: $mid-grey;
-                text-align: center;
-                line-height: 52px;
-
                 background-color: $light-grey;
                 border-radius: 50%;
             }
@@ -61,15 +52,11 @@
             .bg-color-envelope {
                 margin-left: 20px;
 
-                color: $light-grey;
-
                 background-color: $yellow-color;
             }
 
             .bg-color-arrow-up {
                 margin-left: 20px;
-
-                color: $light-grey;
 
                 background-color: $light-green;
             }
